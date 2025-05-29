@@ -13,8 +13,64 @@ header {
   background: var(--test-color);
   border-radius: 15px;
   padding: 15px 20px;
+  border: 2px solid green;
+  line-height: 65px;
 }
 
-h1 {
-  color: var(--primary-color);
+header .right p,
+header .right h1 {
+  font-size: 44px;
+}
+
+header .right p {
+  font-weight: 500;
+}
+
+header .right p:first-child {
+  font-weight: 500;
+}
+
+.gradient-text {
+  background: linear-gradient(
+    90deg,
+    #1e88e5 0%,
+    #cf9797 35%,
+    #ffffff 45%,
+    #cf9797 55%,
+    #1e88e5 100%
+  );
+  background-size: 600% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animateGradient 10s linear infinite;
+}
+
+@keyframes animateGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.buttons button {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  background: #000;
+}
+
+.buttons button:first-child {
+  background: rgba(255, 184, 5, 0.12);
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
