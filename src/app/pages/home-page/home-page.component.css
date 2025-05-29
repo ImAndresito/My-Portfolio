@@ -1,12 +1,29 @@
-header {
-  display: flex;
-  width: 100%;
+body {
   border: 2px solid red;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
   justify-content: space-around;
 }
 
-.left {
+main {
   border: 2px solid blue;
+  height: 50%;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.photo {
+  width: 350px;
+  border-radius: 25px;
+  background-image: url("/assets/images/photo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 133%;
 }
 
 .intro {
