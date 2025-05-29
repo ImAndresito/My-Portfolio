@@ -9,35 +9,34 @@ header {
   border: 2px solid blue;
 }
 
-.right {
-  background: var(--test-color);
-  border-radius: 15px;
+.intro {
+  background: var(--primary-background);
+  border-radius: 25px;
   padding: 15px 20px;
-  border: 2px solid green;
   line-height: 65px;
 }
 
-header .right p,
-header .right h1 {
+header .intro p,
+header .intro h1 {
   font-size: 44px;
 }
 
-header .right p {
+header .intro p {
   font-weight: 500;
 }
 
-header .right p:first-child {
+header .intro p:first-child {
   font-weight: 500;
 }
 
 .gradient-text {
   background: linear-gradient(
     90deg,
-    #1e88e5 0%,
-    #cf9797 35%,
+    var(--primary-color) 0%,
+    var(--secondary-color) 35%,
     #ffffff 45%,
-    #cf9797 55%,
-    #1e88e5 100%
+    var(--secondary-color) 55%,
+    var(--primary-color) 100%
   );
   background-size: 600% 100%;
   background-clip: text;

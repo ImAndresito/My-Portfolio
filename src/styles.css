@@ -7,17 +7,17 @@
 :root {
   --primary-color: #1e88e5;
   --secondary-color: #c83e4d;
+  /* --secondary-color: #cf9797; */
   --tertiary-color: #fbc02d;
-  --background-color: #23272e;
-  --test-color: #151b23;
+  --primary-background: #151b23;
 }
 
 html {
   font-family: "Montserrat", "Roboto", sans-serif;
+  background: #23272e;
 }
 
 body {
-  background: var(--background-color);
   color: #fff;
 }
 
