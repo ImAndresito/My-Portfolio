@@ -17,13 +17,13 @@ header {
   justify-content: space-around;
 }
 
-.photo {
-  width: 350px;
-  border-radius: 25px;
-  background-image: url("/assets/images/photo.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 133%;
+.photo p {
+  margin-top: 5px;
+  margin-left: 10px;
+  font-size: 26px;
+  font-weight: 300;
+  font-style: italic;
+  color: #9198a1;
 }
 
 .intro {
