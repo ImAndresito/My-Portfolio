@@ -17,6 +17,10 @@ header {
   justify-content: space-around;
 }
 
+.photo {
+  position: relative;
+}
+
 .photo p {
   margin-top: 5px;
   margin-left: 10px;
@@ -24,6 +28,17 @@ header {
   font-weight: 300;
   font-style: italic;
   color: #9198a1;
+  position: absolute;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  transform: translateY(-58%);
 }
 
 .intro {
