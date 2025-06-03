@@ -2,12 +2,17 @@ body {
   height: 100dvh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+}
+
+.main-container {
+  width: 1440px;
+  margin: auto;
 }
 
 main {
-  height: 50%;
-  padding-top: 20px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-around;
 }
 
 header {
@@ -116,8 +121,6 @@ header .intro p:first-child {
 .services {
   display: flex;
   gap: 40px;
-  margin-top: 40px;
-  align-content: flex-end;
 }
 
 .box {
@@ -161,4 +164,28 @@ header .intro p:first-child {
   align-items: flex-start;
   gap: 10px;
   padding: 0 0 30px 17px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 50px;
+}
+
+.buttons-container button {
+  font-size: 30px;
+  font-weight: 550;
+  font-style: italic;
+}
+
+.buttons-container button:first-child {
+  color: #fff;
+  background: #6225e6;
+}
+
+.buttons-container button:last-child {
+  color: #000;
+  background: var(--tertiary-color);
+  font-weight: 600;
 }
