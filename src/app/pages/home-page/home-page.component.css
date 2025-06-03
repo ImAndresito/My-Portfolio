@@ -16,11 +16,11 @@ header {
   justify-content: space-around;
 }
 
-.photo {
+.photo-social-container {
   position: relative;
 }
 
-.photo p {
+.photo-social-container p {
   margin-top: 5px;
   margin-left: 10px;
   font-size: 26px;
