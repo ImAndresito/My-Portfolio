@@ -40,6 +40,14 @@ header {
   transform: translateY(-57%);
 }
 
+.socials a {
+  transition: transform 0.2s ease-out;
+}
+
+.socials a:hover {
+  transform: scale(1.11);
+}
+
 .intro {
   background: var(--primary-background);
   border-radius: 25px;
