@@ -177,15 +177,24 @@ header .intro p:first-child {
   font-size: 30px;
   font-weight: 550;
   font-style: italic;
+  width: fit-content;
+  padding: 5px 45px;
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
 }
 
-.buttons-container button:first-child {
+.purple button {
   color: #fff;
   background: #6225e6;
 }
 
-.buttons-container button:last-child {
+.yellow button {
   color: #000;
   background: var(--tertiary-color);
-  font-weight: 600;
+  font-weight: 650;
+}
+
+.button-shadow {
+  position: relative;
+  display: inline-block;
+  filter: drop-shadow(6px 6px 0px rgb(0, 0, 0));
 }
