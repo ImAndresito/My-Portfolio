@@ -198,7 +198,7 @@ header .intro p:first-child {
 }
 
 .buttons-container button:hover {
-  transform: scale(1.1);
+  transform: scale(1.07);
 }
 
 .purple button {
