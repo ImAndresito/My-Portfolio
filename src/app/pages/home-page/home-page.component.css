@@ -110,6 +110,7 @@ header .intro p:first-child {
   border-radius: 30px;
   border: 1px solid #fff;
   background: #000;
+  transition: 0.3s;
 }
 
 .buttons button:first-child {
@@ -117,6 +118,16 @@ header .intro p:first-child {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.buttons button:first-child:hover {
+  background: rgba(255, 184, 5, 0.3);
+  scale: 1.037;
+}
+
+.buttons button:last-child:hover {
+  background: hsla(0, 0%, 100%, 0.2);
+  scale: 1.037;
 }
 
 .services {
