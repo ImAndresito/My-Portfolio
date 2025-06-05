@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-introduction',
@@ -15,13 +16,18 @@ export class IntroductionComponent {
     { code: 'es', label: 'Spanish', flag: 'https://flagcdn.com/w40/es.png' },
   ];
 
+  constructor(private languageService: LanguageService) {}
+
   toggleDropdown() {
     this.dropdownOpen = !this.dropdownOpen;
   }
 
-  selectLanguage(lang: any) {
-    console.log('Selected language:', lang.code);
-    // TODO: switch language logic here
+  selectLanguage(language: any) {
+    this.languageService.loadLanguage(language.code);
     this.dropdownOpen = false;
+  }
+
+  text(key: string): string {
+    return this.languageService.getTranslation(key);
   }
 }
