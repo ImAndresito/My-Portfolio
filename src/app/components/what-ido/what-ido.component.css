@@ -52,14 +52,14 @@ main {
   padding: 0 0 30px 17px;
 }
 
-.bottom-buttons {
+.buttons {
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin-left: 50px;
 }
 
-.bottom-buttons button {
+.buttons button {
   font-size: 30px;
   font-weight: 550;
   font-style: italic;
@@ -71,7 +71,7 @@ main {
   gap: 15px;
 }
 
-.bottom-buttons button:hover {
+.buttons button:hover {
   transform: scale(1.07);
 }
 
