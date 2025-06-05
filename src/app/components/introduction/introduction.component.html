@@ -20,20 +20,20 @@
 
   <div class="intro">
     <p>{{ "greeting" | translate }}</p>
-    <h1 class="gradient-text">{{ "jobTitle" | translate }}</h1>
+    <h1 class="gradient-text">{{ "role" | translate }}</h1>
     <p>
-      {{ "focus" | translate }}
+      {{ "focusedOn" | translate }}
       <span style="color: var(--tertiary-color); font-weight: 600"
         >Front End</span
       >
     </p>
-    <span>{{ "welcome" | translate }}</span>
+    <span>{{ "welcomePortfolio" | translate }}</span>
     <div class="intro-buttons">
       <button>
         {{ "contactMe" | translate }}
         <img src="assets/icons/chat-text.svg" alt="chat text icon" />
       </button>
-      <button>{{ "myResume" | translate }}</button>
+      <button>{{ "myResume" }}</button>
 
       <div class="language-selector" (clickOutside)="dropdownOpen = false">
         <button class="language-button" (click)="toggleDropdown()">

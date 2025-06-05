@@ -1,9 +1,18 @@
 {
   "greeting": "Ciao 👋, sono Andres",
-  "jobTitle": "Junior Full Stack Developer",
-  "focus": "Concentrato su",
-  "welcome": "Benvenuto nel mio Portfolio!",
+  "role": "Junior Full Stack Developer",
+  "focusedOn": "Specializzato in",
+  "welcomePortfolio": "Benvenuto nel mio Portfolio!",
   "contactMe": "Contattami",
   "myResume": "Il mio CV",
-  "changeLanguage": "Cambia lingua"
+  "changeLanguage": "Cambia lingua",
+  "whatIDo": "Cosa faccio",
+  "uiuxDesign": "UI/UX Design",
+  "uiuxDescription": "Creo esperienze utente belle e intuitive.",
+  "responsiveness": "Responsività",
+  "responsivenessDescription": "Sito web completamente responsive.",
+  "development": "Sviluppo",
+  "developmentDescription": "Dare vita alla tua visione",
+  "myProjects": "I MIEI PROGETTI",
+  "mySkills": "LE MIE COMPETENZE"
 }

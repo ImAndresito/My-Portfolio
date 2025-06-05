@@ -1,9 +1,18 @@
 {
   "greeting": "Hola 👋, soy Andres",
-  "jobTitle": "Desarrollador Full Stack Junior",
-  "focus": "Enfocado en",
-  "welcome": "¡Bienvenido a mi portafolio!",
+  "role": "Desarrollador Full Stack Junior",
+  "focusedOn": "Enfocado en",
+  "welcomePortfolio": "¡Bienvenido a mi Portafolio!",
   "contactMe": "Contáctame",
-  "myResume": "Mi currículum",
-  "changeLanguage": "Cambiar idioma"
+  "myResume": "Mi Currículum",
+  "changeLanguage": "Cambiar idioma",
+  "whatIDo": "Lo que hago",
+  "uiuxDesign": "Diseño UI/UX",
+  "uiuxDescription": "Crear experiencias de usuario hermosas e intuitivas.",
+  "responsiveness": "Adaptabilidad",
+  "responsivenessDescription": "Sitio web totalmente responsive.",
+  "development": "Desarrollo",
+  "developmentDescription": "Dando vida a tu visión",
+  "myProjects": "MIS PROYECTOS",
+  "mySkills": "MIS HABILIDADES"
 }

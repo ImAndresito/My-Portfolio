@@ -7,31 +7,31 @@
     margin-top: 40px;
   "
 >
-  What I do
+  {{ "whatIDo" | translate }}
 </p>
 <main>
   <div class="services">
     <div class="box design">
       <img src="assets/icons/design.png" alt="UI/UX Design" />
-      <h3>UI/UX Design</h3>
-      <p>Craft beautiful and intuitive user experience.</p>
+      <h3>{{ "uiuxDesign" | translate }}</h3>
+      <p>{{ "uiuxDescription" | translate }}</p>
     </div>
     <div class="box responsiveness">
       <img src="assets/icons/responsiveness.png" alt="Responsiveness" />
-      <h3>{{ "test" | translate }}</h3>
-      <p>Fully responsive website.</p>
+      <h3>{{ "responsiveness" | translate }}</h3>
+      <p>{{ "responsivenessDescription" | translate }}</p>
     </div>
     <div class="box development">
       <img src="assets/icons/development.png" alt="Development" />
-      <h3>Development</h3>
-      <p>Bringing your vision to life.</p>
+      <h3>{{ "development" | translate }}</h3>
+      <p>{{ "developmentDescription" | translate }}</p>
     </div>
   </div>
 
   <div class="buttons">
     <div class="button-shadow purple">
       <button>
-        MY PROJECTS
+        {{ "myProjects" | translate }}
         <svg width="22" height="35" viewBox="0 0 22 35">
           <path
             fill-rule="evenodd"
@@ -45,7 +45,7 @@
     <br />
     <div class="button-shadow yellow">
       <button>
-        MY SKILLS
+        {{ "mySkills" | translate }}
         <svg width="22" height="35" viewBox="0 0 22 35">
           <path
             fill-rule="evenodd"
