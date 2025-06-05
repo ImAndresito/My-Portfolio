@@ -98,13 +98,13 @@ header .intro p:first-child {
   }
 }
 
-.buttons {
+.intro-buttons {
   display: flex;
   gap: 20px;
   margin-top: 10px;
 }
 
-.buttons button {
+.intro-buttons button {
   padding: 12px;
   font-size: 16px;
   border-radius: 30px;
@@ -113,19 +113,19 @@ header .intro p:first-child {
   transition: 0.3s;
 }
 
-.buttons button:first-child {
+.intro-buttons button:first-child {
   background: rgba(255, 184, 5, 0.12);
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.buttons button:first-child:hover {
+.intro-buttons button:first-child:hover {
   background: rgba(255, 184, 5, 0.3);
   scale: 1.039;
 }
 
-.buttons button:last-child:hover {
+.intro-buttons button:last-child:hover {
   background: hsla(0, 0%, 100%, 0.2);
   scale: 1.039;
 }
@@ -178,14 +178,14 @@ header .intro p:first-child {
   padding: 0 0 30px 17px;
 }
 
-.buttons-container {
+.bottom-buttons {
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin-left: 50px;
 }
 
-.buttons-container button {
+.bottom-buttons button {
   font-size: 30px;
   font-weight: 550;
   font-style: italic;
@@ -197,7 +197,7 @@ header .intro p:first-child {
   gap: 15px;
 }
 
-.buttons-container button:hover {
+.bottom-buttons button:hover {
   transform: scale(1.07);
 }
 
