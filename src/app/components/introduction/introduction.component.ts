@@ -17,6 +17,8 @@ export class IntroductionComponent {
     { code: 'es', label: 'Spanish', flag: 'https://flagcdn.com/w40/es.png' },
   ];
 
+  selectedLanguage = this.languages[0];
+
   constructor(private languageService: LanguageService) {}
 
   toggleDropdown() {
@@ -25,10 +27,7 @@ export class IntroductionComponent {
 
   selectLanguage(language: any) {
     this.languageService.loadLanguage(language.code);
+    this.selectedLanguage = language;
     this.dropdownOpen = false;
-  }
-
-  text(key: string): string {
-    return this.languageService.getTranslation(key);
   }
 }
