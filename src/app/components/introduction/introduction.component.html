@@ -19,25 +19,25 @@
   </div>
 
   <div class="intro">
-    <p>{{ text("greeting") }}</p>
-    <h1 class="gradient-text">{{ text("jobTitle") }}</h1>
+    <p>{{ "greeting" | translate }}</p>
+    <h1 class="gradient-text">{{ "jobTitle" | translate }}</h1>
     <p>
-      {{ text("focus") }}
+      {{ "focus" | translate }}
       <span style="color: var(--tertiary-color); font-weight: 600"
         >Front End</span
       >
     </p>
-    <span>{{ text("welcome") }}</span>
+    <span>{{ "welcome" | translate }}</span>
     <div class="intro-buttons">
       <button>
-        {{ text("contactMe") }}
+        {{ "contactMe" | translate }}
         <img src="assets/icons/chat-text.svg" alt="chat text icon" />
       </button>
-      <button>{{ text("myResume") }}</button>
+      <button>{{ "myResume" | translate }}</button>
 
       <div class="language-selector" (clickOutside)="dropdownOpen = false">
         <button class="language-button" (click)="toggleDropdown()">
-          {{ text("changeLanguage") }}
+          {{ "changeLanguage" | translate }}
           <img
             src="https://flagcdn.com/w40/us.png"
             alt="US flag"
