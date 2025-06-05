@@ -1,4 +1,4 @@
-header {
+main {
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -43,16 +43,16 @@ header {
   line-height: 70px;
 }
 
-header .intro p,
-header .intro h1 {
+main .intro p,
+main .intro h1 {
   font-size: 50px;
 }
 
-header .intro p {
+main .intro p {
   font-weight: 500;
 }
 
-header .intro p:first-child {
+main .intro p:first-child {
   font-weight: 500;
 }
 
