@@ -34,6 +34,29 @@
         <img src="assets/icons/chat-text.svg" alt="chat text icon" />
       </button>
       <button>My Resume</button>
+
+      <div class="language-selector" (clickOutside)="dropdownOpen = false">
+        <button class="language-button" (click)="toggleDropdown()">
+          Change language
+          <img
+            src="https://flagcdn.com/w40/us.png"
+            alt="US flag"
+            class="flag"
+          />
+          <span class="arrow" [class.open]="dropdownOpen">&#9662;</span>
+        </button>
+
+        @if(dropdownOpen) {
+        <ul class="dropdown">
+          @for (lang of languages; track $index) {
+          <li (click)="selectLanguage(lang)">
+            {{ lang.label }}
+            <img class="flag" [src]="lang.flag" alt="{{ lang.label }} flag" />
+          </li>
+          }
+        </ul>
+        }
+      </div>
     </div>
   </div>
 </main>
