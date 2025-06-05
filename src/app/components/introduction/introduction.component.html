@@ -19,25 +19,25 @@
   </div>
 
   <div class="intro">
-    <p>Hi 👋, I’m Andres</p>
-    <h1 class="gradient-text">Junior Full Stack Developer</h1>
+    <p>{{ text("greeting") }}</p>
+    <h1 class="gradient-text">{{ text("jobTitle") }}</h1>
     <p>
-      Focused on
+      {{ text("focus") }}
       <span style="color: var(--tertiary-color); font-weight: 600"
         >Front End</span
       >
     </p>
-    <span>Welcome to my Portfolio!</span>
+    <span>{{ text("welcome") }}</span>
     <div class="intro-buttons">
       <button>
-        Contact Me
+        {{ text("contactMe") }}
         <img src="assets/icons/chat-text.svg" alt="chat text icon" />
       </button>
-      <button>My Resume</button>
+      <button>{{ text("myResume") }}</button>
 
       <div class="language-selector" (clickOutside)="dropdownOpen = false">
         <button class="language-button" (click)="toggleDropdown()">
-          Change language
+          {{ text("changeLanguage") }}
           <img
             src="https://flagcdn.com/w40/us.png"
             alt="US flag"
