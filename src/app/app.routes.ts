@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
-import { HomePageComponent } from './pages/home-page/home-page.component';
+import { WhatIDoComponent } from './components/what-ido/what-ido.component';
 
 export const routes: Routes = [
   {
     path: '',
-    component: HomePageComponent,
+    component: WhatIDoComponent,
     title: '',
   },
 ];

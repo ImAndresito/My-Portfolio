@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HomePageComponent } from './home-page.component';
+import { WhatIDoComponent } from './what-ido.component';
 
-describe('HomePageComponent', () => {
-  let component: HomePageComponent;
-  let fixture: ComponentFixture<HomePageComponent>;
+describe('WhatIDoComponent', () => {
+  let component: WhatIDoComponent;
+  let fixture: ComponentFixture<WhatIDoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HomePageComponent]
+      imports: [WhatIDoComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(HomePageComponent);
+    fixture = TestBed.createComponent(WhatIDoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
