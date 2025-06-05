@@ -11,8 +11,8 @@ export class IntroductionComponent {
 
   languages = [
     { code: 'en', label: 'English', flag: 'https://flagcdn.com/w40/us.png' },
-    { code: 'it', label: 'Italiano', flag: 'https://flagcdn.com/w40/it.png' },
-    { code: 'es', label: 'Français', flag: 'https://flagcdn.com/w40/es.png' },
+    { code: 'it', label: 'Italian', flag: 'https://flagcdn.com/w40/it.png' },
+    { code: 'es', label: 'Spanish', flag: 'https://flagcdn.com/w40/es.png' },
   ];
 
   toggleDropdown() {
