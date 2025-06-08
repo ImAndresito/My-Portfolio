@@ -97,6 +97,10 @@ main .intro p:first-child {
   transition: 0.3s;
 }
 
+.intro-buttons button:hover {
+  scale: 1.039;
+}
+
 .intro-buttons button:first-child {
   background: rgba(255, 184, 5, 0.12);
   display: flex;
@@ -109,9 +113,8 @@ main .intro p:first-child {
   scale: 1.039;
 }
 
-.intro-buttons button:last-child:hover {
+.intro-buttons :nth-child(2):hover {
   background: hsla(0, 0%, 100%, 0.2);
-  scale: 1.039;
 }
 
 .language-selector {
