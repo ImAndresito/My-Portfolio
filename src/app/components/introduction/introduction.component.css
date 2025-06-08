@@ -143,6 +143,7 @@ main .intro p:first-child {
   z-index: 100;
   width: 100%;
   line-height: 45px;
+  overflow: hidden;
 }
 
 .dropdown li {
