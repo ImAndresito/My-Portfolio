@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs';
 import { TranslatePipe } from '../../pipes/translate.pipe';
@@ -21,10 +21,12 @@ import { TranslatePipe } from '../../pipes/translate.pipe';
   `,
   styles: '',
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
   currentTitle: string = '';
 
-  constructor(private router: Router) {
+  constructor(private router: Router) {}
+
+  ngOnInit() {
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe(() => {
