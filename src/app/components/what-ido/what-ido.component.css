@@ -69,6 +69,7 @@ main {
   transition: transform 0.35s ease-in-out;
   display: flex;
   gap: 15px;
+  text-transform: uppercase;
 }
 
 .buttons button:hover {
