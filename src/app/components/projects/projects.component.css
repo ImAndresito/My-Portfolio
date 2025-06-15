@@ -4,6 +4,7 @@ main {
   background: var(--primary-background);
   display: flex;
   padding: 50px;
+  position: relative;
 }
 
 .box {
@@ -78,4 +79,7 @@ main {
 
 .content p {
   line-height: 27px;
+}
+
+app-buttons {
 }
