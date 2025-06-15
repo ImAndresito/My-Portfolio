@@ -6,11 +6,12 @@ export const routes: Routes = [
   {
     path: '',
     component: WhatIDoComponent,
-    title: '',
+    title: 'Andres - Portfolio',
+    data: { title: 'whatIDo' },
   },
   {
     path: 'projects',
     component: ProjectsComponent,
-    title: 'Projects',
+    data: { title: 'projects' },
   },
 ];
