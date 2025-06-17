@@ -6,7 +6,7 @@
   right: 25px;
 }
 
-.buttons .test {
+.buttons .button {
   font-size: 30px;
   font-weight: 550;
   font-style: italic;
@@ -19,16 +19,16 @@
   text-transform: uppercase;
 }
 
-.buttons .test:hover {
+.buttons .button:hover {
   transform: scale(1.07);
 }
 
-.purple .test {
+.purple .button {
   color: #fff;
   background: #6225e6;
 }
 
-.purple .test:hover {
+.purple .button:hover {
   color: var(--tertiary-color);
 }
 
@@ -36,13 +36,13 @@
   fill: var(--tertiary-color);
 }
 
-.yellow .test {
+.yellow .button {
   color: #000;
   background: var(--tertiary-color);
   font-weight: 650;
 }
 
-.yellow .test:hover {
+.yellow .button:hover {
   background: #ffcf58;
 }
 
@@ -56,11 +56,18 @@
   filter: drop-shadow(6px 6px 0px #fbc02d);
 }
 
-.back {
-  background: #c83e4d;
+.backButton {
+  background: #ca293c;
   border-radius: 30px;
   border: 1px solid #fff;
   font-size: 16px;
   padding: 20px;
   width: 125px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.backButton:hover {
+  background: #c83e4d;
+  transform: scale(1.07);
 }

@@ -1,6 +1,6 @@
 <div class="buttons">
-  <div class="button-shadow yellow" [ngClass]="getButtonShadowClass()">
-    <button class="test" [routerLink]="getLink()">
+  <div class="button-shadow" [ngClass]="getButtonShadowClass()">
+    <button class="button" [routerLink]="getLink()">
       {{ getButtonText() | translate }}
       <svg width="22" height="35" viewBox="0 0 22 35">
         <path
@@ -13,5 +13,5 @@
     </button>
   </div>
   <br />
-  <button class="back" [routerLink]="['/']">Close</button>
+  <button class="backButton" [routerLink]="['/']">Close</button>
 </div>

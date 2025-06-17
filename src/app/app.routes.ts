@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { WhatIDoComponent } from './components/what-ido/what-ido.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
 export const routes: Routes = [
   {
@@ -13,5 +14,10 @@ export const routes: Routes = [
     path: 'projects',
     component: ProjectsComponent,
     data: { title: 'myProjects' },
+  },
+  {
+    path: 'skills',
+    component: SkillsComponent,
+    data: { title: 'mySkills' },
   },
 ];
