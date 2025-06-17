@@ -9,13 +9,13 @@ import { ButtonsComponent } from '../buttons/buttons.component';
 })
 export class SkillsComponent {
   skills = [
-    { name: 'Figma' },
-    { name: 'Photoshop' },
-    { name: 'Illustrator' },
-    { name: 'HTML' },
-    { name: 'CSS' },
-    { name: 'JavaScript' },
-    { name: 'Typescript' },
-    { name: 'Angular' },
+    { name: 'Figma', icon: 'figma.svg' },
+    { name: 'Photoshop', icon: 'photoshop.svg' },
+    { name: 'Illustrator', icon: 'illustrator.svg' },
+    { name: 'HTML', icon: 'html.svg' },
+    { name: 'CSS', icon: 'css.svg' },
+    { name: 'JavaScript', icon: 'javascript.svg' },
+    { name: 'Typescript', icon: 'typescript.svg' },
+    { name: 'Angular', icon: 'angular.svg' },
   ];
 }

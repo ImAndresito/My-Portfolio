@@ -3,6 +3,7 @@ main {
   border-radius: 15px;
   position: relative;
   padding: 50px;
+  padding-bottom: 0;
 }
 
 .box {
@@ -11,11 +12,14 @@ main {
   padding: 10px;
   margin: 10px;
   background: var(--primary-background);
-  width: 200px;
+  width: 220px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 220px);
+  grid-template-columns: repeat(auto-fit, 255px);
   grid-template-rows: repeat(3, auto);
   grid-auto-flow: column;
   gap: 10px;
