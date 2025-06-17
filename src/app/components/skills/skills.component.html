@@ -1,2 +1,8 @@
-<p>skills works!</p>
-<app-buttons></app-buttons>
+<main>
+  <app-buttons></app-buttons>
+  <div class="skills-container">
+    @for (skill of skills; track skill.name) {
+    <div class="box">{{ skill.name }}</div>
+    }
+  </div>
+</main>
