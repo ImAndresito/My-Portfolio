@@ -13,11 +13,11 @@ export const routes: Routes = [
   {
     path: 'projects',
     component: ProjectsComponent,
-    data: { title: 'myProjects' },
+    data: { title: 'myProjects', animation: 'My Projects' },
   },
   {
     path: 'skills',
     component: SkillsComponent,
-    data: { title: 'mySkills' },
+    data: { title: 'mySkills', animation: 'Skills' },
   },
 ];

@@ -1,5 +1,7 @@
-<main>
-  <app-introduction></app-introduction>
-  <app-header></app-header>
-  <router-outlet></router-outlet>
+<!-- app.component.html -->
+<app-introduction></app-introduction>
+<app-header></app-header>
+
+<main [@routeAnimations]="prepareRoute(outlet)">
+  <router-outlet #outlet="outlet"></router-outlet>
 </main>
