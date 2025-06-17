@@ -10,13 +10,15 @@ import { CommonModule } from '@angular/common';
   styleUrl: './buttons.component.css',
 })
 export class ButtonsComponent implements OnInit {
-  currentRoute: string;
+  currentRoute: string = '';
 
   constructor(private router: Router) {
     this.currentRoute = '';
   }
 
   ngOnInit() {
+    this.currentRoute = this.router.url;
+
     this.router.events.subscribe(() => {
       this.currentRoute = this.router.url || '/';
     });

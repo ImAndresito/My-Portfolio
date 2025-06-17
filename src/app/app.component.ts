@@ -18,6 +18,8 @@ import { ButtonsComponent } from './components/buttons/buttons.component';
   animations: [slideInAnimation],
 })
 export class AppComponent {
+  title: string = 'My portfolio';
+
   isHomepage: boolean = false;
   currentRoute: string = '';
 
