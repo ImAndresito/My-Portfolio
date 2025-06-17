@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslatePipe } from '../../pipes/translate.pipe';
-import { ActivatedRoute, Router, RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -12,13 +12,13 @@ import { CommonModule } from '@angular/common';
 export class ButtonsComponent implements OnInit {
   currentRoute: string;
 
-  constructor(private router: Router, private activatedRoute: ActivatedRoute) {
+  constructor(private router: Router) {
     this.currentRoute = '';
   }
 
   ngOnInit() {
-    this.activatedRoute.url.subscribe((urlSegments) => {
-      this.currentRoute = urlSegments.join('/') || '/';
+    this.router.events.subscribe(() => {
+      this.currentRoute = this.router.url || '/';
     });
   }
 

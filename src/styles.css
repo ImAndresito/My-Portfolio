@@ -16,6 +16,7 @@
 html {
   font-family: "Montserrat", "Roboto", sans-serif;
   background: #23272e;
+  cursor: url("assets/2.png"), auto;
 }
 
 body {

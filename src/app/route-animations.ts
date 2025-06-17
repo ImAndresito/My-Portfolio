@@ -17,19 +17,29 @@ export const slideInAnimation = trigger('routeAnimations', [
           position: 'absolute',
           width: '100%',
           top: 0,
-          left: 0,
+          transform: 'translateX(0%)',
         }),
       ],
       { optional: true }
     ),
-    query(':enter', [style({ left: '100%' })], { optional: true }),
+    query(':enter', [style({ transform: 'translateX(100%)' })], {
+      optional: true,
+    }),
     group([
-      query(':leave', [animate('300ms ease-out', style({ left: '-100%' }))], {
-        optional: true,
-      }),
-      query(':enter', [animate('300ms ease-out', style({ left: '0%' }))], {
-        optional: true,
-      }),
+      query(
+        ':leave',
+        [animate('500ms ease-out', style({ transform: 'translateX(-100%)' }))],
+        {
+          optional: true,
+        }
+      ),
+      query(
+        ':enter',
+        [animate('500ms ease-out', style({ transform: 'translateX(0)' }))],
+        {
+          optional: true,
+        }
+      ),
     ]),
   ]),
 ]);

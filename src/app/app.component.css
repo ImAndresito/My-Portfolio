@@ -3,3 +3,7 @@ main {
   min-height: 380px;
   overflow: hidden;
 }
+
+.button-container {
+  position: relative;
+}
