@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { slideInAnimation } from './route-animations';
 import { IntroductionComponent } from './components/introduction/introduction.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -18,6 +18,16 @@ import { ButtonsComponent } from './components/buttons/buttons.component';
   animations: [slideInAnimation],
 })
 export class AppComponent {
+  isHomepage: boolean = false;
+  currentRoute: string = '';
+
+  constructor(private router: Router) {
+    this.router.events.subscribe(() => {
+      this.currentRoute = this.router.url;
+      this.isHomepage = this.currentRoute === '/';
+    });
+  }
+
   prepareRoute(outlet: RouterOutlet) {
     return outlet?.activatedRouteData?.['animation'];
   }
