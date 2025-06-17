@@ -28,6 +28,8 @@
 .purple .button {
   color: #fff;
   background: #6225e6;
+
+  fill: #fff;
 }
 
 .purple .button:hover {
@@ -42,6 +44,7 @@
   color: #000;
   background: var(--tertiary-color);
   font-weight: 650;
+  fill: #000;
 }
 
 .yellow .button:hover {
