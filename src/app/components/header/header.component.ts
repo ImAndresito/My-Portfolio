@@ -23,8 +23,8 @@ import { TranslatePipe } from '../../pipes/translate.pipe';
 
       @media screen and (max-width: 480px) {
         .header-title {
-          font-size: 24px;
-          margin-top: 20px;
+          font-size: 26px;
+          margin-top: 25px;
         }
       }
     `,
