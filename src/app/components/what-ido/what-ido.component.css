@@ -117,7 +117,9 @@ main {
     padding-top: 26px;
   }
 
-  .services {
+  /* BLOCK STYLE What I do */
+
+  /* .services {
     flex-direction: column;
     align-items: center;
   }
@@ -148,7 +150,50 @@ main {
   .development {
     padding: 0 0 30px 0;
     gap: 15px;
+  } */
+
+  /* ---------------------------------------- */
+
+  /* GRID STYLE */
+  .services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    align-items: center;
+    gap: 15px;
+    padding: 0 15px;
   }
+
+  .box {
+    height: 200px;
+    width: auto;
+    text-align: center;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+  }
+
+  .box img {
+    width: 30px;
+  }
+
+  .box h3 {
+    font-size: 16px;
+  }
+
+  .box p {
+    font-size: 14px;
+  }
+
+  .design,
+  .responsiveness,
+  .development {
+    padding: 0 0 30px 0;
+    gap: 15px;
+  }
+
+  /* ---------------------------------------- */
 
   /* SQUARE BUTTONS */
   /* .buttons {
