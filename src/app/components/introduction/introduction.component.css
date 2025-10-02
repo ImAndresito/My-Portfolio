@@ -166,3 +166,53 @@ main .intro p:first-child {
 .dropdown li:hover {
   background-color: #333;
 }
+
+/* MOBILE */
+
+@media screen and (max-width: 480px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .photo-social-container {
+    width: 60%;
+  }
+
+  .photo-social-container img {
+    max-width: 100%;
+  }
+
+  .socials {
+    transform: translateY(-50%);
+    gap: 13px;
+    right: -20px;
+  }
+
+  .socials a {
+    width: 36px;
+  }
+
+  .photo-social-container p {
+    font-size: 21px;
+  }
+
+  .intro {
+    border: 2px solid red;
+    margin-top: 60px;
+    border-radius: 25px;
+    padding: 15px;
+    line-height: 41px;
+    text-align: center;
+  }
+
+  .intro p,
+  h1 {
+    font-size: 24px !important;
+  }
+
+  .welcome-txt {
+    line-height: 55px;
+  }
+}

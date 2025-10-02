@@ -7,3 +7,10 @@ main {
 .buttons-container {
   position: relative;
 }
+
+/* MOBILE */
+
+main {
+  width: auto;
+  height: auto;
+}
