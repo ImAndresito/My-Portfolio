@@ -214,4 +214,18 @@ main .intro p:first-child {
   .welcome-txt {
     line-height: 55px;
   }
+
+  .intro-buttons {
+    flex-direction: column;
+  }
+
+  .intro-buttons button {
+    border-radius: 8px;
+    justify-content: center;
+  }
+
+  .language-selector {
+    position: relative;
+    margin: auto;
+  }
 }
