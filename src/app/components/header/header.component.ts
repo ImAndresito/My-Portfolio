@@ -7,19 +7,28 @@ import { TranslatePipe } from '../../pipes/translate.pipe';
   selector: 'app-header',
   imports: [TranslatePipe],
   template: `
-    <p
-      style="
-    font-size: 32px;
-    font-weight: 700;
-    text-align: center;
-    color: #a089ce;
-    margin-top: 40px;
-  "
-    >
+    <p class="header-title">
       {{ currentTitle | translate }}
     </p>
   `,
-  styles: '',
+  styles: [
+    `
+      .header-title {
+        font-size: 32px;
+        font-weight: 700;
+        text-align: center;
+        color: #a089ce;
+        margin-top: 40px;
+      }
+
+      @media screen and (max-width: 480px) {
+        .header-title {
+          font-size: 24px;
+          margin-top: 20px;
+        }
+      }
+    `,
+  ],
 })
 export class HeaderComponent implements OnInit {
   currentTitle: string = '';
