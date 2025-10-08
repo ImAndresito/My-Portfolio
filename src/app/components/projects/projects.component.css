@@ -87,7 +87,10 @@ main {
   main {
     display: block;
     padding: 0;
-    padding-top: 50px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    margin-bottom: 100px;
+    margin-top: 26px;
   }
 
   .box {
@@ -96,12 +99,12 @@ main {
   }
 
   .prj {
-    margin-left: 2.5%;
+    margin-left: 5%;
   }
 
   .content {
     padding-top: 20px;
-    max-width: 95%;
+    max-width: 90%;
     margin: auto;
   }
 
