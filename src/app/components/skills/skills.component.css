@@ -24,3 +24,30 @@ main {
   grid-auto-flow: column;
   gap: 10px;
 }
+
+/* MOBILE */
+
+@media screen and (max-width: 480px) {
+  main {
+    border-radius: 15px;
+    position: relative;
+    padding: 0px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 108px;
+  }
+
+  .box {
+    font-size: 16px;
+    margin: 5px 0;
+    width: 175px;
+    gap: 12px;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(auto-fit, 180px);
+    grid-template-rows: repeat(4, auto);
+    justify-content: center;
+    margin-top: 26px;
+  }
+}
